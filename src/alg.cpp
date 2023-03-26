@@ -63,11 +63,9 @@ int cbinsearch(int* arr, int size, int value) {
                 k++;
             }
             return count;
-        }
-        else if (arr[half] < value) {
+        } else if (arr[half] < value) {
             start = half + 1;
-        }
-        else {
+        } else {
             end = half - 1;
         }
     }
@@ -81,8 +79,7 @@ int countPairs3(int* arr, int len, int value) {
     }
     if (count > 0) {
         return count;
-    }
-    else {
+    } else {
         return 0;
     }
 }
